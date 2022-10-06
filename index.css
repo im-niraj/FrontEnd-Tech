@@ -1,0 +1,30 @@
+/* parent should be flexed for its child to adapt inside */
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* for the child we will provide width & height for each boxes */
+
+.child{
+    width: calc(33% - 10px);
+    height: 100px;
+    background-color: darkblue;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* breakpoints */
+@media (min-width : 640px){
+    .child{
+        width: calc(25% - 10px);
+    }
+}
+
+@media (min-width : 940px){
+    .child{
+        width: calc(20% - 10px);
+    }
+}
