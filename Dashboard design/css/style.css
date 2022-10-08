@@ -37,28 +37,64 @@ body {
 }
 
 .sidebar-content {
-  padding: 20px;
+    padding: 5px;
+}
+.sidebar-content .slogan p{
+    line-height: 1.1;
+    padding-bottom: 10px;
+}
+.sidebar-content .slogan{
+    border-bottom: 1px solid #999;
 }
 
 .sidebar-content ul {
-
-  list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    list-style-type: none;
+}
+.sidebar-content ul li{
+    /* display: flex; */
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.sidebar-content ul li i{
+    margin-right: 5px;
 }
 
-.sidebar-content ul li a {
-  text-decoration: none;
-}
-
-.sidebar-content ul li:hover {
+.sidebar-content ul li:hover{
   background-color: #6b6b6b;
+  cursor: pointer;
+  color: #ffcc19;
+}
+
+.sidebar-content ul li:hover i {
+    color: #ffcc19;
+}
+.activePage{
+    background-color: #949090;
+    cursor: pointer;
+    color: #ffcc19;
 }
 
 .brand {
-  text-align: center;
-  background-color: #e5b200;
-  color: #6b6b6b;
+    position: relative;
+    text-align: center;
+    background-color: #e5b200;
+    color: #6b6b6b;
 }
 
+#brandhead{
+    padding: 3px 0;
+}
+#brandtitle{
+    position: absolute;
+    top: 0;
+    margin-top: 33px;
+    font-size: 13px;
+    margin-left: 46px;
+    color: #ffcc19;
+}
 
 .sidebar-small-active{
     display: none;
@@ -71,15 +107,8 @@ body {
 .sidebar-content-two ul li{
     cursor: pointer;
 }
-.sidebar-content-two ul li a{
-    display: block;
-    padding: 5px 0;
-}
 .sidebar-content-two ul li:hover{
     background-color:#6b6b6b;
-    
-}
-.sidebar-content-two ul li a:hover{
     color: #ffcc19;
 }
 
@@ -146,6 +175,25 @@ button {
 /* navbar  **** end *****  */
 
 
+.card-container{
+    display: flex;
+}
+
+.card-home{
+    height: 200px;
+    width: 100%;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border: 0;
+}
+.card-home:first-child{
+    margin: 0 10px 0 0;
+}
+.card-home:last-child{
+    margin: 0 0 0 10px;
+}
+
 .h2 {
   margin-top: 15px;
   font-size: 2rem;
@@ -169,6 +217,12 @@ p {
 .dataList{
   display: flex;
   justify-content: space-between;
+}
+.dataList .content-table:first-child{
+    margin-right: 15px;
+}
+.dataList .content-table:last-child{
+    margin-right: 15px;
 }
 
 

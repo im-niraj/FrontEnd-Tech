@@ -16,11 +16,19 @@ const collaps = () => {
 }
 
 
-function show(shown, hidden) {
-    console.log(shown, hidden);
+function show(shown, hidden, active, active11) {
     document.getElementById(shown).style.display='block';
     document.getElementById(hidden).style.display='none';
-    
+    var ul =document.getElementById("ul");
+    for(let i=0; i<ul.children.length; i++){
+        ul.children[i].classList.remove("activePage");
+    }
+    var ul1 =document.getElementById("ul1");
+    for(let i=0; i<ul1.children.length; i++){
+        ul1.children[i].classList.remove("activePage");
+    }
+    document.getElementById(active).classList.add('activePage');
+    document.getElementById(active11).classList.add('activePage');
   }
 
   function loadHTML(){
