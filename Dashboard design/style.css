@@ -1,0 +1,196 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+}
+
+.container {
+  display: flex;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+  width: 80px;
+  background: #ffcc19;
+  color: #6b6b6b;
+  height: 100vh;
+  position: static;
+  top: 0;
+  bottom: 0;
+  transition: width 200ms;
+}
+
+.activeSidebar {
+  min-width: 250px;
+}
+.sidebarMenuDeactive{
+  display: none;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content ul {
+
+  list-style: none;
+}
+
+.sidebar-content ul li a {
+  text-decoration: none;
+}
+
+.sidebar-content ul li:hover {
+  background-color: #6b6b6b;
+}
+
+.brand {
+  text-align: center;
+  background-color: #e5b200;
+  color: #6b6b6b;
+}
+
+
+.sidebar-small-active{
+    display: none;
+}
+.sidebar-content-two{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;  
+}
+.sidebar-content-two ul li{
+    cursor: pointer;
+}
+.sidebar-content-two ul li a{
+    display: block;
+    padding: 5px 0;
+}
+.sidebar-content-two ul li:hover{
+    background-color:#6b6b6b;
+    
+}
+.sidebar-content-two ul li a:hover{
+    color: #ffcc19;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+  background: #fafafa;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  transition: all 0.3s;
+  height: 100vh;
+  position: static;
+  flex-grow: 1;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: margin-left .5s;
+}
+
+
+
+/* navbar  start*/
+#navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#collapsButton {
+  border: 0;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: #ffcc19;
+  color: #6b6b6b;
+  cursor: pointer;
+}
+
+.leftrigth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightnav {
+  display: flex;
+  align-items: center;
+}
+
+.rightnav>p,
+button {
+  margin-left: 10px;
+}
+
+/* navbar  **** end *****  */
+
+
+.h2 {
+  margin-top: 15px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+
+/*  table list*/
+.dataList{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.addData{
+  padding: 10px 10px;
+  background-color: green;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.addData:hover{
+  background-color: blue;
+}
+/* ---------------------------------------------------
+    Footer
+----------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
