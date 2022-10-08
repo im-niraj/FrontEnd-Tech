@@ -46,3 +46,68 @@
     cursor: pointer;
     background-color: #9bdccf;
 }
+
+
+
+
+/* table for index.html */
+.tableChart{
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+}
+.tableChartHeader{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.table-customer{
+    border-collapse: collapse;
+    margin: 5px 0;
+    width: 100%;
+}
+.table-customer thead tr
+{
+    /* background-color: #9bdccf; */
+    text-align: left;
+    font-weight: bold;
+    color: #999;
+}
+.table-customer thead tr{
+    border-bottom: 2px solid #9bdccf;
+}
+.table-customer td, th{
+    padding: 12px 15px; 
+}
+.table-customer tbody tr:nth-of-type(even){
+
+    background-color: #f8ecec;
+}
+
+.table-customer tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.actionButton{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+.actionButton i:first-child{
+    color: blue;
+    cursor: pointer;
+    transition: all .1s;
+}
+.actionButton i:last-child{
+    color: red;
+    cursor: pointer;
+    transition: all .1s;
+}
+.actionButton i:hover{
+    font-size: 20px;
+    transform: scale(1.1);
+}
+
