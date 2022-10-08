@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="sidebar" class="activeSidebar">
+            <div id="style-one" >
+                <div class="brand ">
+                    <h1>Inventory</h1>
+                </div>
+                <div class="sidebar-content ">
+                    <div class="slogan">
+                        <p>Fully Computerized billing system</p>
+                    </div>
+                    <ul>
+                        <li><a href="#" onclick="show('Page1','Page2');">Page 1</a></li>
+                        <li><a href="#" onclick="show('Page2','Page1');">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                        <li><a href="#">Page 4</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="style-two" class="sidebar-small-active">
+                <div class="brand ">
+                    <h1>IMS</h1>
+                </div>
+                <div class="sidebar-content-two">
+                    
+                    <ul>
+                        <li><a href="#" onclick="show('Page1','Page2');"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                        <li><a href="#" onclick="show('Page2','Page1');"><i class="fa fa-table" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="content" class="mainContent">
+            <nav id="navbar">
+                <div class="leftrigth">
+                    <div class="leftnav">
+                        <button onclick="collaps()" id="collapsButton">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                    </div>
+                    <div class="rightnav">
+                        <i class="fas fa-user"></i>
+                        <p>niraj kumar</p>
+                        <button id="collapsButton">
+                            LogOut
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="Page1" class="content-area">
+                Content of page 1
+                <h2 class="h2">Collapsible Sidebar Using Bootstrap 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="line"></div>
+
+                <h2 class="h2">Lorem Ipsum Dolor (1)</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="line"></div>
+
+                <h2 class="h2">Lorem Ipsum Dolor (2)</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="line"></div>
+
+                <h3 class="h2">Lorem Ipsum Dolor (3)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+            </div>
+            <div id="Page2" style="display:none" class="content-area">
+                Content of page 2
+
+
+                <button onclick="loadHTML()">
+                    Click to load content from home.html file
+                </button>
+                <div id="homePage">
+                    <p>The content from Home Page will be displayed here</p>
+               </div>
+
+
+               <button class="addData"><i class="fa fa-plus" aria-hidden="true"></i> Add Person</button>
+               <div class="dataList">
+
+               
+                
+               <table class="content-table ">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Team</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Domenic</td>
+                    <td>88,110</td>
+                    <td>dcode</td>
+                  </tr>
+                  <tr class="active-row ">
+                    <td>2</td>
+                    <td>Sally</td>
+                    <td>72,400</td>
+                    <td>Students</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Nick</td>
+                    <td>52,300</td>
+                    <td>dcode</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="content-table ">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Team</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Domenic</td>
+                    <td>88,110</td>
+                    <td>dcode</td>
+                  </tr>
+                  <tr class="active-row ">
+                    <td>2</td>
+                    <td>Sally</td>
+                    <td>72,400</td>
+                    <td>Students</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Nick</td>
+                    <td>52,300</td>
+                    <td>dcode</td>
+                  </tr>
+                </tbody>
+              </table>
+               
+            </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
