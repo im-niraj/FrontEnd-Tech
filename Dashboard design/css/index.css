@@ -1,0 +1,52 @@
+.paginationButton {
+  display: flex;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.paginationButton .pagination ul {
+  background-color: cadetblue;
+  display: flex;
+  padding: 4px;
+  border-radius: 50px;
+}
+.paginationButton .pagination ul li {
+  list-style: none;
+  line-height: 35px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.paginationButton .pagination ul .numb {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.paginationButton .pagination ul .numb:hover {
+  background-color: rgb(64, 114, 242);
+}
+.paginationButton .pagination ul .btn {
+  padding: 0 20px;
+}
+.paginationButton .pagination ul .btn:hover {
+  background-color: rgb(64, 114, 242);
+}
+.paginationButton .pagination ul .prev {
+  border-radius: 25px 5px 5px 25px;
+}
+.paginationButton .pagination ul .next {
+  border-radius: 5px 25px 25px 5px;
+}
+.paginationButton .pagination ul .dots {
+  font-size: 22px;
+  cursor: default;
+}
+.paginationButton .pagination ul .pageActive {
+  background-color: rgb(64, 114, 242);
+}/*# sourceMappingURL=index.css.map */
